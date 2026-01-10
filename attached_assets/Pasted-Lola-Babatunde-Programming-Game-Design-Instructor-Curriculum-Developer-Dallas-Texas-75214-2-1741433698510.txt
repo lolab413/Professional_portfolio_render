@@ -1,0 +1,63 @@
+Lola Babatunde
+Programming/Game Design Instructor |Curriculum Developer 
+
+Dallas, Texas 75214
+(214) 300-5515
+lolababatunde413@gmail.com
+EXPERIENCE
+
+Game-U (Virtual)|March 2022 - Present
+Data Science & Game Design Instructor / Curriculum Developer
+Instruct students (ages 18+ and younger learners) in full-stack web development, game development, and data science.
+Teach JavaScript, Lua, C#, React, Vue, Flutter, Python, and SQL while emphasizing debugging, GitHub workflows, version control, and software best practices.
+Develop and deliver interactive labs covering databases, object-oriented programming, and algorithms to prepare students for real-world software engineering careers.
+Guide students in front-end and back-end development, focusing on Node.js, Express, REST APIs, and authentication.
+Provide individualized mentorship, fostering strong problem-solving skills and professional development.
+iCode - Computer Science and Robotics School (in-person)| June 2020 - Sept 2022
+Technical Lead Instructor / CS Instructional Designer
+Led instruction in Python, JavaScript, SQL, and database management, teaching students how to build and optimize applications.
+Designed and implemented curricula covering data structures, algorithms, debugging methodologies, and Git/GitHub workflows.
+Developed project-based learning experiences, teaching students to build full-stack applications and manage code repositories.
+Provided instruction on object-oriented programming (OOP), Agile methodologies, and test-driven development (TDD).
+Freedom Learning Group/Coursera| Remote | June 2023 - Sept. 2024
+Instructional Content Author / Instructional Designer - Data Science
+Created interactive learning modules and technical documentation for data science, AI, and machine learning concepts.
+Designed hands-on programming exercises in Python and SQL, enabling students to apply real-world data analytics skills.
+Developed technical tutorials using Articulate 360, Adobe Creative Suite, and Camtasia to enhance learner engagement.
+Collaborated with SMEs to ensure technical accuracy and instructional effectiveness.
+Atomic8Ball| Remote  | October 2018 – January 2020
+Content Writer & Full-Stack Developer
+Wrote 10,000+ words of technical documentation covering APIs, cybersecurity, SaaS platforms, and software best practices.
+Developed interactive learning demos for software solutions, incorporating user feedback for iterative improvements.
+LoveHandle | Remote | February 2021 – September 2021
+Frontend Developer
+Developed and maintained customer-facing applications using JavaScript, HTML, CSS, and Liquid (Shopify’s templating language).
+Implemented UI/UX enhancements and improved mobile responsiveness for better user experience.
+Created technical guides and documentation for internal teams and customers.
+
+
+
+CORE COMPETENCIES
+Full-Stack Development: JavaScript (ES6+), React, Vue, Node.js, Express, PostgreSQL
+Software Engineering Fundamentals: Object-Oriented Programming, Data Structures & Algorithms, TDD
+Debugging & Code Review: GitHub workflows, version control, professional development for junior developers
+Technical Instruction & Curriculum Development: Project-based learning, immersive coding instruction, mentorship
+Instructional Design: Articulate 360, Camtasia, Adobe Creative Suite (Illustrator, Photoshop, Premiere Pro)
+Content Development: Hands-on labs, tutorial creation, e-learning modules
+CERTIFICATIONS
+NVIDIA Accelerated Computing Training: Getting Started with Accelerated Computing in CUDA C/C++ (In Progress)
+Articulate Storyline Certification – Completed
+EDUCATION
+Texas Woman's University
+Bachelor of Business Administration (B.B.A.) | Enactus Member
+Brookhaven College
+Certificate in Computer Programming | Post-Graduate
+PROJECTS
+Exploration Code — An E-Learning Platform for Kids and Adults.
+Built using Carrd.co and Articulate 360 to deliver interactive coding, game development, and digital literacy courses.
+Designed a user-friendly curriculum for self-paced learning.
+https://explorationcode.org/
+
+
+
+
