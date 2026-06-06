@@ -30,13 +30,13 @@ const writingSamples: WritingSample[] = [
   },
   {
     id: 2,
-    title: "Building Inclusive Curriculum for Game Development",
-    excerpt: "A comprehensive approach to creating game development curricula that welcome learners from all backgrounds and skill levels.",
-    category: "Curriculum Design",
+    title: "Create User Stories in Miro",
+    excerpt: "A guided project on Coursera teaching product teams how to craft effective user stories using Miro, combining Agile methodologies with collaborative visual planning.",
+    category: "Product Development",
     publishDate: "2024-02-08",
-    readTime: "7 min read",
-    tags: ["Curriculum", "Game Development", "Inclusion"],
-    url: "https://lolababatunde413.journoportfolio.com/"
+    readTime: "Guided Project",
+    tags: ["Product Development", "Product Strategy", "Agile Product Development"],
+    url: "https://www.coursera.org/projects/create-user-stories-miro"
   },
   {
     id: 3,
