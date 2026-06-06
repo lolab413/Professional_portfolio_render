@@ -40,13 +40,13 @@ const writingSamples: WritingSample[] = [
   },
   {
     id: 3,
-    title: "From Code to Classroom: Teaching Programming Fundamentals",
-    excerpt: "Effective strategies for introducing programming concepts to beginners through hands-on projects and real-world applications.",
-    category: "Programming Education",
+    title: "Grab Data Fast with Vertical and Horizontal LOOKUP",
+    excerpt: "A practical Coursera project focused on mastering VLOOKUP and HLOOKUP functions in Google Sheets to quickly extract and analyze data for business insights.",
+    category: "Data Analysis",
     publishDate: "2024-03-12",
-    readTime: "6 min read",
-    tags: ["Programming", "Teaching", "Beginner-Friendly"],
-    url: "https://lolababatunde413.journoportfolio.com/"
+    readTime: "Guided Project",
+    tags: ["Data Literacy", "Data Analysis", "Business Analysis"],
+    url: "https://www.coursera.org/projects/grab-data-fast-with-vertical-and-horizontal-lookup-in-google-sheets"
   },
   {
     id: 4,
