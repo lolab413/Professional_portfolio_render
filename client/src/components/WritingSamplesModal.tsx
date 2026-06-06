@@ -20,13 +20,13 @@ interface WritingSample {
 const writingSamples: WritingSample[] = [
   {
     id: 1,
-    title: "The Future of Interactive Learning",
-    excerpt: "Exploring how technology is reshaping education through immersive experiences and gamification techniques that engage modern learners.",
-    category: "Education Technology",
+    title: "3D Game Development Course",
+    excerpt: "A comprehensive curriculum for teaching 3D game development, covering modeling, animation, and interactive design principles for aspiring game creators.",
+    category: "Curriculum Design",
     publishDate: "2024-01-15",
-    readTime: "5 min read",
-    tags: ["EdTech", "Interactive Learning", "Gamification"],
-    url: "https://lolababatunde413.journoportfolio.com/"
+    readTime: "Course Material",
+    tags: ["Curriculum Design", "Game Development", "3D Modeling", "Instruction"],
+    url: "https://media.journoportfolio.com/users/42831/uploads/14bef6b8-df11-41d3-a214-5cea6e4d6ffc.pdf"
   },
   {
     id: 2,
