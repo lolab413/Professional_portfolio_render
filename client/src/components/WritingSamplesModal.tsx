@@ -50,13 +50,13 @@ const writingSamples: WritingSample[] = [
   },
   {
     id: 4,
-    title: "The Art of Instructional Design in Tech",
-    excerpt: "How instructional design principles can transform complex technical concepts into accessible, engaging learning experiences.",
-    category: "Instructional Design",
+    title: "The Dallas Housing Authority Infographic",
+    excerpt: "A visually compelling infographic designed for the Dallas Housing Authority, translating complex data and community impact into an accessible, engaging format.",
+    category: "Business Development",
     publishDate: "2024-04-05",
-    readTime: "8 min read",
-    tags: ["Instructional Design", "Technical Writing", "UX"],
-    url: "https://lolababatunde413.journoportfolio.com/"
+    readTime: "Infographic",
+    tags: ["Non-Profit", "Business Development", "Community Outreach", "Data Visualization"],
+    url: "https://lolababatunde413.journoportfolio.com/?item=403667"
   },
   {
     id: 5,
