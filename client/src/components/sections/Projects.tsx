@@ -42,9 +42,12 @@ export function Projects() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
+          <h2 className="text-3xl font-bold mb-2 text-center">Curriculum & Learning Design</h2>
+          <p className="text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
+            Case studies in curriculum development, instructional design, and learning experience creation.
+          </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {projects.map((project) => (
               <motion.div
                 key={project.id}
@@ -52,7 +55,7 @@ export function Projects() {
                 transition={{ duration: 0.2 }}
               >
                 <Card className="overflow-hidden h-full">
-                  <div className="aspect-video relative overflow-hidden">
+                  <div className="aspect-square relative overflow-hidden max-h-48">
                     {project.inDevelopment && (
                       <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-10">
                         <Badge 
