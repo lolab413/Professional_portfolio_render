@@ -55,7 +55,7 @@ export function Projects() {
                 transition={{ duration: 0.2 }}
               >
                 <Card className="overflow-hidden h-full">
-                  <div className="aspect-square relative overflow-hidden max-h-48">
+                  <div className="w-full aspect-square relative overflow-hidden">
                     {project.inDevelopment && (
                       <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-10">
                         <Badge 
