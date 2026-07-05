@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Linkedin, Github, FileText, Loader2, CheckCircle, AlertCircle } from "lucide-react";
+import { Avatoon } from "@/components/Avatoon";
 import { WritingSamplesModal } from "@/components/WritingSamplesModal";
 import { useState, FormEvent } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -64,7 +65,7 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-white relative overflow-visible">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -127,6 +128,9 @@ export function Contact() {
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-slate-500 shrink-0" />
                   <span className="text-sm">Dallas, Texas 75214</span>
+                </div>
+                <div className="hidden md:flex justify-center pt-2">
+                  <Avatoon />
                 </div>
               </CardContent>
             </Card>
