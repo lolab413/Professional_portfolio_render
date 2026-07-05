@@ -5,10 +5,42 @@
 @layer base {
   :root {
     scroll-behavior: smooth;
-  }
 
-  * {
-    @apply border-border;
+    --background: 0 0% 100%;
+    --foreground: 220 40% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 15%;
+    --primary: 220 40% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 20% 96%;
+    --secondary-foreground: 220 40% 25%;
+    --muted: 220 20% 96%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 220 20% 96%;
+    --accent-foreground: 220 40% 25%;
+    --destructive: 0 80% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 220 40% 45%;
+    --radius: 0.5rem;
+
+    --chart-1: 220 40% 45%;
+    --chart-2: 200 40% 50%;
+    --chart-3: 180 40% 55%;
+    --chart-4: 260 40% 50%;
+    --chart-5: 280 40% 45%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 40% 20%;
+    --sidebar-primary: 220 40% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 20% 94%;
+    --sidebar-accent-foreground: 220 40% 25%;
+    --sidebar-border: 220 20% 90%;
+    --sidebar-ring: 220 40% 45%;
   }
 
   body {

@@ -3,19 +3,22 @@ import { Sidebar, SidebarContext } from "@/components/layout/Sidebar";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Projects } from "@/components/sections/Projects";
+import { Teaching } from "@/components/sections/Teaching";
+import { LearningPhilosophy } from "@/components/sections/LearningPhilosophy";
 import { Resume } from "@/components/sections/Resume";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import { AchievementBadge } from "@/components/gamification/AchievementBadge";
 import { ProgressBar } from "@/components/gamification/ProgressBar";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(true);
   const [achievements, setAchievements] = useState({
     about: false,
     projects: false,
+    teaching: false,
+    philosophy: false,
     resume: false,
     contact: false
   });
@@ -53,7 +56,7 @@ export default function Home() {
       { threshold: 0.5 }
     );
 
-    ['about', 'projects', 'resume', 'contact'].forEach(id => {
+    ['about', 'projects', 'teaching', 'philosophy', 'resume', 'contact'].forEach(id => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);
     });
@@ -65,7 +68,6 @@ export default function Home() {
     <SidebarContext.Provider value={{ isOpen, setIsOpen }}>
       <div className="flex min-h-screen bg-background">
         <Sidebar />
-        <ThemeToggle />
         <ProgressBar />
         <motion.div
           layout
@@ -76,11 +78,17 @@ export default function Home() {
         >
           <main>
             <Hero />
+            <section id="projects">
+              <Projects />
+            </section>
             <section id="about">
               <About />
             </section>
-            <section id="projects">
-              <Projects />
+            <section id="teaching">
+              <Teaching />
+            </section>
+            <section id="philosophy">
+              <LearningPhilosophy />
             </section>
             <section id="resume">
               <Resume />
@@ -92,13 +100,21 @@ export default function Home() {
           <Footer />
         </motion.div>
 
-        <AchievementBadge 
+        <AchievementBadge
           title="About Me Master"
           isVisible={achievements.about}
         />
         <AchievementBadge
-          title="Project Explorer"
+          title="Case Study Explorer"
           isVisible={achievements.projects}
+        />
+        <AchievementBadge
+          title="Classroom Observer"
+          isVisible={achievements.teaching}
+        />
+        <AchievementBadge
+          title="Philosophy Reader"
+          isVisible={achievements.philosophy}
         />
         <AchievementBadge
           title="Resume Reader"

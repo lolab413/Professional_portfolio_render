@@ -16,7 +16,7 @@ const projects: Project[] = [
   {
     id: 2,
     title: "3D Game Development Curriculum",
-    description: " Unity curriculum built for iCode, featuring hands-on projects and interactive lessons to teach game design, C# scripting, and development fundamentals",
+    description: "Unity curriculum built for iCode, featuring hands-on projects and interactive lessons to teach game design, C# scripting, and development fundamentals",
     imageUrl: "/Images/Unity.png",
     tags: ["Curriculum Development", "Instructional Design", "Project-Based Learning"],
     link: "https://media.journoportfolio.com/users/42831/uploads/14bef6b8-df11-41d3-a214-5cea6e4d6ffc.pdf"
@@ -24,7 +24,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Exploration Code E-Learning Platform",
-    description: " An interactive e-learning platform designed to teach coding and game development through hands-on projects, engaging lessons, and a structured curriculum for learners of all levels.",
+    description: "An interactive e-learning platform designed to teach coding and game development through hands-on projects, engaging lessons, and a structured curriculum for learners of all levels.",
     imageUrl: "/Images/exploration-code-new.png",
     tags: ["Curriculum Development", "Instructional Design", "Project-Based Learning"],
     link: "https://explorationcode.org/",
@@ -34,7 +34,7 @@ const projects: Project[] = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-20 bg-slate-50">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,25 +42,29 @@ export function Projects() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold mb-2 text-center">Curriculum & Learning Design</h2>
-          <p className="text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
-            Case studies in curriculum development, instructional design, and learning experience creation.
+          <h2 className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-2 text-center">
+            Case Studies
+          </h2>
+          <h3 className="text-3xl font-bold mb-4 text-center">Curriculum & Learning Design</h3>
+          <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+            Selected projects showcasing curriculum development, instructional design,
+            and learning experience creation.
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project) => (
               <motion.div
                 key={project.id}
                 whileHover={{ y: -5 }}
                 transition={{ duration: 0.2 }}
               >
-                <Card className="overflow-hidden h-full">
+                <Card className="overflow-hidden h-full hover:shadow-lg transition-shadow">
                   <div className="w-full aspect-square relative overflow-hidden">
                     {project.inDevelopment && (
                       <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-10">
-                        <Badge 
-                          variant="secondary" 
-                          className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 text-lg font-semibold shadow-lg"
+                        <Badge
+                          variant="secondary"
+                          className="bg-gradient-to-r from-primary to-blue-400 text-white px-4 py-2 text-lg font-semibold shadow-lg"
                         >
                           Beta Coming Soon
                         </Badge>
@@ -73,7 +77,7 @@ export function Projects() {
                     />
                   </div>
                   <CardHeader>
-                    <CardTitle className="flex items-center justify-between">
+                    <CardTitle className="flex items-center justify-between text-base">
                       {project.title}
                       {project.link && (
                         <a
@@ -82,16 +86,16 @@ export function Projects() {
                           rel="noopener noreferrer"
                           className="text-muted-foreground hover:text-primary"
                         >
-                          <ExternalLink className="h-5 w-5" />
+                          <ExternalLink className="h-4 w-4" />
                         </a>
                       )}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground mb-4">{project.description}</p>
+                    <p className="text-muted-foreground mb-4 text-sm">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
-                        <Badge key={tag} variant="secondary">
+                        <Badge key={tag} variant="outline" className="text-xs">
                           {tag}
                         </Badge>
                       ))}

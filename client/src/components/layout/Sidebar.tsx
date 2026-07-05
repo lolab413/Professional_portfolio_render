@@ -1,6 +1,7 @@
 import { useState, createContext, useContext } from "react";
 import { motion } from "framer-motion";
-import { FiHome, FiUser, FiBriefcase, FiFileText, FiMail, FiChevronsRight, FiGithub, FiEdit } from "react-icons/fi";
+import { FiHome, FiUser, FiBriefcase, FiFileText, FiMail, FiChevronsRight, FiGithub, FiEdit, FiMonitor } from "react-icons/fi";
+import { GiBrain } from "react-icons/gi";
 import { WritingSamplesModal } from "@/components/WritingSamplesModal";
 
 export const SidebarContext = createContext<{
@@ -12,8 +13,10 @@ export const useSidebar = () => useContext(SidebarContext);
 
 const navItems = [
   { href: "#home", icon: FiHome, label: "Home" },
+  { href: "#projects", icon: FiBriefcase, label: "Case Studies" },
   { href: "#about", icon: FiUser, label: "About" },
-  { href: "#projects", icon: FiBriefcase, label: "Projects" },
+  { href: "#teaching", icon: FiMonitor, label: "Teaching" },
+  { href: "#philosophy", icon: GiBrain, label: "Philosophy" },
   { href: "#resume", icon: FiFileText, label: "Resume" },
   { href: "#contact", icon: FiMail, label: "Contact" },
 ];
@@ -26,7 +29,6 @@ export function Sidebar() {
     setSelected(label);
     const element = document.querySelector(href);
     if (element) {
-      // Add an offset to account for the fixed header
       const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
@@ -36,7 +38,6 @@ export function Sidebar() {
         behavior: "smooth"
       });
     }
-    // Close sidebar on mobile after navigation
     if (window.innerWidth < 768) {
       setIsOpen(false);
     }
@@ -62,7 +63,7 @@ export function Sidebar() {
             transition={{ delay: 0.125 }}
           >
             <span className="block text-sm font-semibold">Lola Babatunde</span>
-            <span className="block text-xs text-muted-foreground">Game Design</span>
+            <span className="block text-xs text-muted-foreground">Instructional Designer</span>
           </motion.div>
         )}
       </div>
@@ -95,9 +96,9 @@ export function Sidebar() {
             )}
           </motion.div>
         ))}
-        
+
         {/* GitHub Link */}
-        <a 
+        <a
           href="https://github.com/lolab413"
           target="_blank"
           rel="noopener noreferrer"
@@ -122,9 +123,9 @@ export function Sidebar() {
             )}
           </motion.div>
         </a>
-        
+
         {/* Writing Samples Modal */}
-        <WritingSamplesModal 
+        <WritingSamplesModal
           trigger={
             <motion.div
               layout

@@ -1,16 +1,9 @@
-import { motion } from "framer-motion";
-
 export function Footer() {
   return (
-    <footer className="w-full py-4 mt-auto bg-background/80 backdrop-blur-sm border-t border-primary/10">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="container mx-auto px-4 text-center text-sm text-muted-foreground"
-      >
-        Made with 🧡 using React
-      </motion.div>
+    <footer className="w-full py-6 bg-slate-50 border-t border-slate-200">
+      <div className="container mx-auto px-4 text-center text-sm text-slate-500">
+        Made with care using React
+      </div>
     </footer>
   );
 }
