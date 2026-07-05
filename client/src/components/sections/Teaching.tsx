@@ -33,24 +33,29 @@ const teachingSnapshots = [
 
 export function Teaching() {
   return (
-    <section id="teaching" className="py-20 bg-slate-50">
-      <div className="container mx-auto px-4">
+    <section id="teaching" className="py-24 bg-[#FAFAF8]">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-2 text-center">
+          <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#6B7B6B] mb-4 text-center">
             In the Classroom
+          </p>
+          <h2
+            className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 text-center text-[#1C1C1C]"
+            style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}
+          >
+            Teaching
           </h2>
-          <h3 className="text-3xl font-bold mb-4 text-center">Teaching</h3>
-          <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+          <p className="text-[#666666] text-center mb-16 max-w-2xl mx-auto text-base md:text-lg">
             Creating hands-on learning environments where students build real projects
             and develop practical technical skills.
           </p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-16">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-20">
             {technologies.map((tech, index) => (
               <motion.div
                 key={tech.name}
@@ -59,11 +64,11 @@ export function Teaching() {
                 transition={{ duration: 0.3, delay: index * 0.05 }}
                 viewport={{ once: true }}
               >
-                <Card className="h-full hover:shadow-md transition-shadow">
+                <Card className="h-full border border-[#E5E5E5] shadow-none hover:shadow-md transition-shadow">
                   <CardContent className="p-4 flex flex-col items-center text-center gap-2">
-                    <tech.icon className="h-6 w-6 text-slate-600" />
-                    <span className="text-sm font-medium">{tech.name}</span>
-                    <Badge variant="outline" className="text-xs">
+                    <tech.icon className="h-5 w-5 text-[#6B7B6B]" />
+                    <span className="text-sm font-medium text-[#1C1C1C]">{tech.name}</span>
+                    <Badge variant="outline" className="text-xs text-[#888888] border-[#E5E5E5]">
                       {tech.category}
                     </Badge>
                   </CardContent>
@@ -72,7 +77,7 @@ export function Teaching() {
             ))}
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             {teachingSnapshots.map((snapshot, i) => (
               <motion.div
                 key={i}
@@ -81,17 +86,17 @@ export function Teaching() {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="overflow-hidden">
-                  <div className="aspect-video bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center">
-                    <span className="text-slate-500 text-sm font-medium">
+                <Card className="overflow-hidden border border-[#E5E5E5] shadow-none">
+                  <div className="aspect-video bg-gradient-to-br from-[#E8EAE8] to-[#D5DAD5] flex items-center justify-center">
+                    <span className="text-[#888888] text-sm font-medium">
                       {snapshot.placeholder}
                     </span>
                   </div>
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-base">{snapshot.title}</CardTitle>
+                    <CardTitle className="text-base font-medium text-[#1C1C1C]">{snapshot.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="pt-0">
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-[#666666] leading-relaxed">
                       {snapshot.description}
                     </p>
                   </CardContent>

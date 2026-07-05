@@ -65,8 +65,8 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white relative overflow-visible">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-24 bg-white">
+      <div className="container mx-auto px-4 md:px-8 lg:px-16 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,70 +74,78 @@ export function Contact() {
           viewport={{ once: true }}
           className="max-w-4xl mx-auto"
         >
-          <h2 className="text-sm font-semibold tracking-widest uppercase text-muted-foreground mb-2 text-center">
+          <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#6B7B6B] mb-4 text-center">
             Let's Connect
+          </p>
+          <h2
+            className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 text-center text-[#1C1C1C]"
+            style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}
+          >
+            Get In Touch
           </h2>
-          <h3 className="text-3xl font-bold mb-8 text-center">Get In Touch</h3>
+          <p className="text-[#666666] text-center mb-16 max-w-xl mx-auto text-base md:text-lg">
+            Have a project in mind or want to collaborate? I'd love to hear from you.
+          </p>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="order-2 md:order-1">
+            <Card className="order-2 md:order-1 border border-[#E5E5E5] shadow-none">
               <CardHeader>
-                <CardTitle className="text-lg">Contact Information</CardTitle>
+                <CardTitle className="text-lg font-medium text-[#1C1C1C]">Contact Information</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <Mail className="h-5 w-5 text-slate-500 shrink-0" />
-                  <span className="text-sm">icodewithlola@gmail.com</span>
+                  <Mail className="h-5 w-5 text-[#6B7B6B] shrink-0" />
+                  <span className="text-sm text-[#1C1C1C]">icodewithlola@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Linkedin className="h-5 w-5 text-slate-500 shrink-0" />
+                  <Linkedin className="h-5 w-5 text-[#6B7B6B] shrink-0" />
                   <a
                     href="https://www.linkedin.com/in/lolababatunde/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm hover:text-slate-700 transition-colors"
+                    className="text-sm text-[#666666] hover:text-[#1C1C1C] transition-colors"
                   >
                     linkedin.com/in/lolababatunde
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Github className="h-5 w-5 text-slate-500 shrink-0" />
+                  <Github className="h-5 w-5 text-[#6B7B6B] shrink-0" />
                   <a
                     href="https://github.com/lolab413"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm hover:text-slate-700 transition-colors"
+                    className="text-sm text-[#666666] hover:text-[#1C1C1C] transition-colors"
                   >
                     github.com/lolab413
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <FileText className="h-5 w-5 text-slate-500 shrink-0" />
+                  <FileText className="h-5 w-5 text-[#6B7B6B] shrink-0" />
                   <WritingSamplesModal
                     trigger={
-                      <button className="text-sm hover:text-slate-700 transition-colors text-left">
+                      <button className="text-sm text-[#666666] hover:text-[#1C1C1C] transition-colors text-left">
                         My Writing Samples
                       </button>
                     }
                   />
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Phone className="h-5 w-5 text-slate-500 shrink-0" />
-                  <span className="text-sm">(214) 300-5515</span>
+                  <Phone className="h-5 w-5 text-[#6B7B6B] shrink-0" />
+                  <span className="text-sm text-[#1C1C1C]">(214) 300-5515</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <MapPin className="h-5 w-5 text-slate-500 shrink-0" />
-                  <span className="text-sm">Dallas, Texas 75214</span>
+                  <MapPin className="h-5 w-5 text-[#6B7B6B] shrink-0" />
+                  <span className="text-sm text-[#1C1C1C]">Dallas, Texas 75214</span>
                 </div>
-                <div className="hidden md:flex justify-center pt-2">
+                <div className="hidden md:flex justify-center pt-4">
                   <Avatoon />
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="order-1 md:order-2">
+            <Card className="order-1 md:order-2 border border-[#E5E5E5] shadow-none">
               <CardHeader>
-                <CardTitle className="text-lg">Send a Message</CardTitle>
+                <CardTitle className="text-lg font-medium text-[#1C1C1C]">Send a Message</CardTitle>
               </CardHeader>
               <CardContent>
                 <form className="space-y-4" onSubmit={handleSubmit}>
@@ -146,7 +154,7 @@ export function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="Your Name"
-                    className="w-full"
+                    className="w-full border-[#E5E5E5] focus:border-[#6B7B6B] focus:ring-[#6B7B6B]"
                     required
                     disabled={isSubmitting}
                   />
@@ -156,7 +164,7 @@ export function Contact() {
                     onChange={handleChange}
                     type="email"
                     placeholder="Your Email"
-                    className="w-full"
+                    className="w-full border-[#E5E5E5] focus:border-[#6B7B6B] focus:ring-[#6B7B6B]"
                     required
                     disabled={isSubmitting}
                   />
@@ -165,14 +173,13 @@ export function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Your Message"
-                    className="min-h-[120px] w-full resize-none"
+                    className="min-h-[120px] w-full resize-none border-[#E5E5E5] focus:border-[#6B7B6B] focus:ring-[#6B7B6B]"
                     required
                     disabled={isSubmitting}
                   />
                   <button
                     type="submit"
-                    className="w-full h-10 rounded-md text-sm font-medium text-white transition-colors flex items-center justify-center"
-                    style={{ backgroundColor: '#334155' }}
+                    className="w-full h-11 rounded-md text-sm font-medium text-white transition-colors flex items-center justify-center bg-[#1C1C1C] hover:bg-[#333333]"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
