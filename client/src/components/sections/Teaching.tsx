@@ -33,7 +33,7 @@ const teachingSnapshots = [
 
 export function Teaching() {
   return (
-    <section id="teaching" className="py-24 bg-[#FAFAF8]">
+    <section id="teaching" className="py-24 bg-background">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -41,16 +41,16 @@ export function Teaching() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#6B7B6B] mb-4 text-center">
+          <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-primary mb-4 text-center">
             In the Classroom
           </p>
           <h2
-            className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 text-center text-[#1C1C1C]"
+            className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 text-center text-foreground"
             style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}
           >
             Teaching
           </h2>
-          <p className="text-[#666666] text-center mb-16 max-w-2xl mx-auto text-base md:text-lg">
+          <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto text-base md:text-lg">
             Creating hands-on learning environments where students build real projects
             and develop practical technical skills.
           </p>
@@ -64,11 +64,11 @@ export function Teaching() {
                 transition={{ duration: 0.3, delay: index * 0.05 }}
                 viewport={{ once: true }}
               >
-                <Card className="h-full border border-[#E5E5E5] shadow-none hover:shadow-md transition-shadow">
+                <Card className="h-full border border-border shadow-none hover:shadow-md transition-shadow">
                   <CardContent className="p-4 flex flex-col items-center text-center gap-2">
-                    <tech.icon className="h-5 w-5 text-[#6B7B6B]" />
-                    <span className="text-sm font-medium text-[#1C1C1C]">{tech.name}</span>
-                    <Badge variant="outline" className="text-xs text-[#888888] border-[#E5E5E5]">
+                    <tech.icon className="h-5 w-5 text-primary" />
+                    <span className="text-sm font-medium text-foreground">{tech.name}</span>
+                    <Badge variant="outline" className="text-xs text-muted-foreground border-border">
                       {tech.category}
                     </Badge>
                   </CardContent>
@@ -86,17 +86,17 @@ export function Teaching() {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="overflow-hidden border border-[#E5E5E5] shadow-none">
-                  <div className="aspect-video bg-gradient-to-br from-[#E8EAE8] to-[#D5DAD5] flex items-center justify-center">
-                    <span className="text-[#888888] text-sm font-medium">
+                <Card className="overflow-hidden border border-border shadow-none">
+                  <div className="aspect-video bg-gradient-to-br from-muted to-secondary flex items-center justify-center">
+                    <span className="text-muted-foreground text-sm font-medium">
                       {snapshot.placeholder}
                     </span>
                   </div>
                   <CardHeader className="pb-2">
-                    <CardTitle className="text-base font-medium text-[#1C1C1C]">{snapshot.title}</CardTitle>
+                    <CardTitle className="text-base font-medium text-foreground">{snapshot.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="pt-0">
-                    <p className="text-sm text-[#666666] leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       {snapshot.description}
                     </p>
                   </CardContent>

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-[#FAFAF8]">
+    <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -12,16 +12,16 @@ export function About() {
           className="grid md:grid-cols-2 gap-16 items-center"
         >
           <div className="order-2 md:order-1">
-            <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#6B7B6B] mb-4">
+            <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-primary mb-4">
               About Me
             </p>
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#1C1C1C] leading-tight mb-6"
+              className="text-3xl md:text-4xl lg:text-5xl font-medium text-foreground leading-tight mb-6"
               style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}
             >
               Building Confidence Through Technology
             </h2>
-            <p className="text-base md:text-lg leading-relaxed text-[#666666]">
+            <p className="text-base md:text-lg leading-relaxed text-muted-foreground">
               I enjoy helping students build confidence with technology. Whether I'm
               designing curriculum, mentoring students, or developing new learning
               experiences, my goal is to make complex technical concepts approachable,

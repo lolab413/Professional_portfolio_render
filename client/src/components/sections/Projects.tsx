@@ -34,7 +34,7 @@ const projects: Project[] = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 bg-white">
+    <section id="projects" className="py-24 bg-card">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,16 +42,16 @@ export function Projects() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#6B7B6B] mb-4 text-center">
+          <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-primary mb-4 text-center">
             Case Studies
           </p>
           <h2
-            className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 text-center text-[#1C1C1C]"
+            className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 text-center text-foreground"
             style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}
           >
             Curriculum & Learning Design
           </h2>
-          <p className="text-[#666666] text-center mb-16 max-w-2xl mx-auto text-base md:text-lg">
+          <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto text-base md:text-lg">
             Selected projects showcasing curriculum development, instructional design,
             and learning experience creation.
           </p>
@@ -66,13 +66,13 @@ export function Projects() {
                 viewport={{ once: true }}
                 whileHover={{ y: -4 }}
               >
-                <Card className="overflow-hidden h-full border border-[#E5E5E5] shadow-none hover:shadow-lg transition-shadow duration-300">
-                  <div className="w-full aspect-square relative overflow-hidden bg-[#F5F5F5]">
+                <Card className="overflow-hidden h-full border border-border shadow-none hover:shadow-lg transition-shadow duration-300">
+                  <div className="w-full aspect-square relative overflow-hidden bg-muted">
                     {project.inDevelopment && (
                       <div className="absolute inset-0 bg-black/30 flex items-center justify-center z-10">
                         <Badge
                           variant="secondary"
-                          className="bg-[#6B7B6B] text-white px-4 py-2 text-sm font-medium border-0"
+                          className="bg-primary text-primary-foreground px-4 py-2 text-sm font-medium border-0"
                         >
                           Beta Coming Soon
                         </Badge>
@@ -85,14 +85,14 @@ export function Projects() {
                     />
                   </div>
                   <CardHeader className="pb-2">
-                    <CardTitle className="flex items-center justify-between text-base font-medium text-[#1C1C1C]">
+                    <CardTitle className="flex items-center justify-between text-base font-medium text-foreground">
                       {project.title}
                       {project.link && (
                         <a
                           href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#888888] hover:text-[#6B7B6B] transition-colors"
+                          className="text-muted-foreground hover:text-primary transition-colors"
                         >
                           <ExternalLink className="h-4 w-4" />
                         </a>
@@ -100,10 +100,10 @@ export function Projects() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-[#666666] mb-4 text-sm leading-relaxed">{project.description}</p>
+                    <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{project.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
-                        <Badge key={tag} variant="outline" className="text-xs text-[#888888] border-[#E5E5E5]">
+                        <Badge key={tag} variant="outline" className="text-xs text-muted-foreground border-border">
                           {tag}
                         </Badge>
                       ))}

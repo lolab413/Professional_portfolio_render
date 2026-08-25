@@ -8,6 +8,7 @@ import { LearningPhilosophy } from "@/components/sections/LearningPhilosophy";
 import { Resume } from "@/components/sections/Resume";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/layout/Footer";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(true);
@@ -31,8 +32,9 @@ export default function Home() {
 
   return (
     <SidebarContext.Provider value={{ isOpen, setIsOpen }}>
-      <div className="flex min-h-screen bg-[#FAFAF8]">
+      <div className="flex min-h-screen bg-background">
         <Sidebar />
+        <ThemeToggle />
         <div
           className="flex-1 flex flex-col transition-[margin-left] duration-300 ease-in-out"
           style={{

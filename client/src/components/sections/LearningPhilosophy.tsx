@@ -27,7 +27,7 @@ const philosophies = [
 
 export function LearningPhilosophy() {
   return (
-    <section id="philosophy" className="py-24 bg-white">
+    <section id="philosophy" className="py-24 bg-card">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -35,16 +35,16 @@ export function LearningPhilosophy() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#6B7B6B] mb-4 text-center">
+          <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-primary mb-4 text-center">
             How I Design Learning
           </p>
           <h2
-            className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 text-center text-[#1C1C1C]"
+            className="text-3xl md:text-4xl lg:text-5xl font-medium mb-4 text-center text-foreground"
             style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}
           >
             Learning Philosophy
           </h2>
-          <p className="text-[#666666] text-center mb-16 max-w-2xl mx-auto text-base md:text-lg">
+          <p className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto text-base md:text-lg">
             Four principles that guide every curriculum, workshop, and learning
             experience I create.
           </p>
@@ -58,15 +58,15 @@ export function LearningPhilosophy() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="h-full border border-[#E5E5E5] shadow-none hover:shadow-md transition-shadow">
+                <Card className="h-full border border-border shadow-none hover:shadow-md transition-shadow">
                   <CardHeader className="pb-3">
-                    <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-3 bg-[#F0F2F0]">
-                      <item.icon className="h-5 w-5 text-[#6B7B6B]" />
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-3 bg-muted">
+                      <item.icon className="h-5 w-5 text-primary" />
                     </div>
-                    <CardTitle className="text-lg font-medium text-[#1C1C1C]">{item.title}</CardTitle>
+                    <CardTitle className="text-lg font-medium text-foreground">{item.title}</CardTitle>
                   </CardHeader>
                   <CardContent className="pt-0">
-                    <p className="text-sm text-[#666666] leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       {item.description}
                     </p>
                   </CardContent>

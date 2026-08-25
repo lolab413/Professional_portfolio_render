@@ -61,7 +61,7 @@ const education: Education[] = [
 
 export function Resume() {
   return (
-    <section id="resume" className="py-24 bg-[#FAFAF8]">
+    <section id="resume" className="py-24 bg-background">
       <div className="container mx-auto px-4 md:px-8 lg:px-16 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -71,11 +71,11 @@ export function Resume() {
         >
           <div className="flex justify-between items-end mb-12">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#6B7B6B] mb-4">
+              <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-primary mb-4">
                 Resume
               </p>
               <h2
-                className="text-3xl md:text-4xl lg:text-5xl font-medium text-[#1C1C1C]"
+                className="text-3xl md:text-4xl lg:text-5xl font-medium text-foreground"
                 style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}
               >
                 Experience & Education
@@ -84,7 +84,7 @@ export function Resume() {
             <a
               href="/resume.pdf"
               download="Lola_Babatunde_Resume.pdf"
-              className="hidden sm:inline-flex items-center gap-2 text-sm font-medium text-[#1C1C1C] hover:text-[#6B7B6B] transition-colors"
+              className="hidden sm:inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               <Download className="h-4 w-4" />
               Download CV
@@ -92,20 +92,20 @@ export function Resume() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            <Card className="border border-[#E5E5E5] shadow-none">
+            <Card className="border border-border shadow-none">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl font-medium text-[#1C1C1C]" style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}>
+                <CardTitle className="text-xl font-medium text-foreground" style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}>
                   Experience
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-8">
                 {experiences.map((exp, index) => (
-                  <div key={index} className="border-l-2 border-[#6B7B6B] pl-4">
-                    <h3 className="font-medium text-[#1C1C1C]">{exp.position}</h3>
-                    <p className="text-sm text-[#888888]">
+                  <div key={index} className="border-l-2 border-primary pl-4">
+                    <h3 className="font-medium text-foreground">{exp.position}</h3>
+                    <p className="text-sm text-muted-foreground">
                       {exp.company} | {exp.period}
                     </p>
-                    <ul className="mt-2 list-disc list-inside text-sm text-[#666666] space-y-1">
+                    <ul className="mt-2 list-disc list-inside text-sm text-muted-foreground space-y-1">
                       {exp.description.map((item, i) => (
                         <li key={i}>{item}</li>
                       ))}
@@ -115,20 +115,20 @@ export function Resume() {
               </CardContent>
             </Card>
 
-            <Card className="border border-[#E5E5E5] shadow-none">
+            <Card className="border border-border shadow-none">
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl font-medium text-[#1C1C1C]" style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}>
+                <CardTitle className="text-xl font-medium text-foreground" style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}>
                   Education
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-8">
                 {education.map((edu, index) => (
-                  <div key={index} className="border-l-2 border-[#6B7B6B] pl-4">
-                    <h3 className="font-medium text-[#1C1C1C]">{edu.degree}</h3>
-                    <p className="text-sm text-[#888888]">
+                  <div key={index} className="border-l-2 border-primary pl-4">
+                    <h3 className="font-medium text-foreground">{edu.degree}</h3>
+                    <p className="text-sm text-muted-foreground">
                       {edu.school} | {edu.period}
                     </p>
-                    <p className="mt-2 text-sm text-[#666666]">{edu.description}</p>
+                    <p className="mt-2 text-sm text-muted-foreground">{edu.description}</p>
                   </div>
                 ))}
               </CardContent>
@@ -139,7 +139,7 @@ export function Resume() {
             <a
               href="/resume.pdf"
               download="Lola_Babatunde_Resume.pdf"
-              className="inline-flex items-center gap-2 text-sm font-medium text-[#1C1C1C] hover:text-[#6B7B6B] transition-colors"
+              className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               <Download className="h-4 w-4" />
               Download CV
