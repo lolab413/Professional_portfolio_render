@@ -61,7 +61,7 @@ export function Hero() {
               href="#about"
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              About me
+              About
             </a>
           </motion.div>
 
