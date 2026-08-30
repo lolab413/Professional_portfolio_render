@@ -38,6 +38,15 @@ export function About() {
                   the same question: What does this learner need to move forward?
                 </p>
               </div>
+              <figure className="mt-10 max-w-md overflow-hidden rounded-xl border border-border bg-muted">
+                <img
+                  src="/Images/about-section-image.png"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  className="block aspect-[16/9] w-full object-cover"
+                />
+              </figure>
             </div>
 
             <motion.div

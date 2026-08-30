@@ -53,7 +53,14 @@ const education: Education[] = [
   {
     school: "Purdue Global",
     degree: "Graduate Certificate in Instructional Design and Technology",
-    period: "Post-Graduate",
+    period: "Post-Graduate (Completed August 2026)",
+    description:
+      "Focused on learning experience design, adult learning theory, and technology-enabled instructional solutions.",
+  },
+  {
+    school: "Purdue Global",
+    degree: "Master of Science in Instructional Design and Technology",
+    period: "Post-Graduate (In-Progress)",
     description:
       "Focused on learning experience design, adult learning theory, and technology-enabled instructional solutions.",
   },
