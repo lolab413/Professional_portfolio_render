@@ -71,13 +71,13 @@ export function About() {
                   </ul>
                 </CardContent>
               </Card>
-              <figure className="mt-8 w-full max-w-md overflow-hidden rounded-xl border border-border bg-muted">
+              <figure className="mt-8 w-full max-w-2xl">
                 <img
-                  src="/Images/about-section-image.png"
+                  src="/Images/About_img.png"
                   alt=""
                   aria-hidden="true"
                   loading="lazy"
-                  className="block aspect-[16/9] w-full object-cover"
+                  className="block h-auto w-full object-contain"
                 />
               </figure>
             </motion.div>
