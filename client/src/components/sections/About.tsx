@@ -38,18 +38,10 @@ export function About() {
                   the same question: What does this learner need to move forward?
                 </p>
               </div>
-              <figure className="mt-10 max-w-md overflow-hidden rounded-xl border border-border bg-muted">
-                <img
-                  src="/Images/about-section-image.png"
-                  alt=""
-                  aria-hidden="true"
-                  loading="lazy"
-                  className="block aspect-[16/9] w-full object-cover"
-                />
-              </figure>
             </div>
 
             <motion.div
+              className="flex flex-col items-end"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.15 }}
@@ -79,6 +71,15 @@ export function About() {
                   </ul>
                 </CardContent>
               </Card>
+              <figure className="mt-8 w-full max-w-md overflow-hidden rounded-xl border border-border bg-muted">
+                <img
+                  src="/Images/about-section-image.png"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  className="block aspect-[16/9] w-full object-cover"
+                />
+              </figure>
             </motion.div>
           </div>
 
