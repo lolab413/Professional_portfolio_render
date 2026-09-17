@@ -25,11 +25,10 @@ export function TwitchFeed() {
               className="text-3xl md:text-4xl font-medium text-foreground mb-4"
               style={{ fontFamily: "'DM Serif Display', Georgia, serif" }}
             >
-              Live coding &amp; learning
+              Gaming, Live coding &amp; learning
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6 max-w-md">
-              Follow along as I explore creative technology, coding, and game
-              development on stream.
+              Join me on stream as I play games, write code, and explore game development.
             </p>
             <a
               href={`https://www.twitch.tv/${channel}`}
