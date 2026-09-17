@@ -3,6 +3,7 @@ import { Sidebar, SidebarContext } from "@/components/layout/Sidebar";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Projects } from "@/components/sections/Projects";
+import { CoursesAndWriting } from "@/components/sections/CoursesAndWriting";
 import { LearningPhilosophy } from "@/components/sections/LearningPhilosophy";
 import { TwitchFeed } from "@/components/sections/TwitchFeed";
 import { Resume } from "@/components/sections/Resume";
@@ -46,6 +47,7 @@ export default function Home() {
             <section id="projects">
               <Projects />
             </section>
+            <CoursesAndWriting />
             <section id="about">
               <About />
             </section>
