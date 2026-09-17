@@ -1,6 +1,7 @@
 import { useState, createContext, useContext } from "react";
 import { motion } from "framer-motion";
 import { FiHome, FiUser, FiBriefcase, FiFileText, FiMail, FiChevronsRight, FiGithub, FiEdit } from "react-icons/fi";
+import { FaTwitch } from "react-icons/fa";
 import { GiBrain } from "react-icons/gi";
 import { WritingSamplesModal } from "@/components/WritingSamplesModal";
 
@@ -15,6 +16,7 @@ const navItems = [
   { href: "#home", icon: FiHome, label: "Home" },
   { href: "#projects", icon: FiBriefcase, label: "Case Studies" },
   { href: "#about", icon: FiUser, label: "About" },
+  { href: "#twitch", icon: FaTwitch, label: "Twitch" },
   { href: "#philosophy", icon: GiBrain, label: "Philosophy" },
   { href: "#resume", icon: FiFileText, label: "Resume" },
   { href: "#contact", icon: FiMail, label: "Contact" },
